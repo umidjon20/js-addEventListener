@@ -1,7 +1,7 @@
 let btn = document.querySelector('button')
 let inp = document.querySelector('.input')
 let todo = document.querySelector('.todo')
-function shovInput(){
+function showInput(){
     if(inp.value !== ""){
         inp.style.border = '2px solid green'
         todo.innerHTML += `
@@ -15,7 +15,7 @@ function shovInput(){
 }
 
 
-btn.addEventListener('click',shovInput)
+btn.addEventListener('click',showInput)
 
 
 let incBtn = document.querySelector('.increment'),
