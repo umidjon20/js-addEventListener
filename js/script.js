@@ -31,7 +31,7 @@ function countInc(){
     countValue++
   count.innerText = countValue
   if(countValue === 50){
-     incBtn.removeEventListener('click',countInc)
+     countValue--
   }
 }
 
@@ -40,8 +40,8 @@ incBtn.addEventListener('click',countInc)
 function countDec(){
     countValue--
   count.innerText = countValue
-  if(countValue === -50){
-     decBtn.removeEventListener('click',countDec)
+  if(countValue === -50 ){
+   countValue++
   }
 }
 
