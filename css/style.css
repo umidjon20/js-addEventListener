@@ -11,7 +11,7 @@ header{
     row-gap: 30px;
     background-image: url(../img/bc.jpg.jpg);
     background-repeat:no-repeat;
-    background-size:100%;
+    background-size:100% ;
 }
 .container{
     width: 540px;
@@ -19,6 +19,7 @@ header{
     justify-content: space-between;
     margin: 0 auto;
 }
+
 h2{
     font-weight: 700;
     font-size: 40px;
@@ -61,9 +62,9 @@ button{
 .todo li{
     width: 400px;
     height: 40px;
-    text-align: center;
+    /* text-align: center; */
     background:black;
-    list-style-type:decimal;
+    /* list-style-type:decimal; */
     border-bottom:1px solid skyblue;
     letter-spacing:4px ;
     font-size: 24px;
@@ -78,4 +79,29 @@ button{
     margin: 200px 0 50px 0;
     font-size: 24px;
     /* text-align: center; */
+}
+ul{
+    padding: 0;
+}
+li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    cursor: pointer;
+
+}
+input[type="checkbox"]:checked ~ span{
+    text-decoration: line-through;
+
+}
+.cross{
+    display: none;
+    cursor: pointer;
+}
+li:hover .cross{
+    display: block;
+}
+.delet{
+    margin-top: 300px;
 }
